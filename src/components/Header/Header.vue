@@ -89,7 +89,10 @@ export default {
       'navbarType',
       'navbarColorScheme'
     ]),
-    firstUserLetter() { return (this.user.name || this.user.email || "P")[0].toUpperCase(); },
+    firstUserLetter() {
+       return (this.user.name || this.user.email || "P")[0].toUpperCase();
+    },
+
     navbarTypeClass: function () {
       return "navbar-" + this.navbarType + "-type"
     }

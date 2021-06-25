@@ -73,7 +73,7 @@ export default {
         }
       }
     },
-    changeSidebarActive(state: any, index: any) {
+    changeSidebarActive(state: any, index: string) {
       state.sidebarActiveElement = index;
     },
     updateLayoutComponentType(state: any, payload: any) {
