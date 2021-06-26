@@ -83,8 +83,8 @@ export default {
       state.sidebarColorName = payload.color[0];
     },
     updateNavbarColor(state: any, payload: any) {
-      let colorName = payload.color[0];
-      let colorValue = payload.color[1];
+      const colorName = payload.color[0];
+      const colorValue = payload.color[1];
       state.navbarColorName = colorName;
       updateRootCss('--navbar-bg', colorValue);
       state.navbarColorScheme = chroma(colorValue).luminance() < 0.4 ? NavbarColorSchemes.DARK : NavbarColorSchemes.LIGHT;

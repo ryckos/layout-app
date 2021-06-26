@@ -13,7 +13,7 @@ export default {
     },
   methods: {
     decodeHtml(html: any) {
-      let txt = document.createElement("textarea");
+      const txt = document.createElement("textarea");
       txt.innerHTML = html;
       return txt.value;
     }

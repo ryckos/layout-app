@@ -10,6 +10,7 @@ import Layout from '../components/Layout/Layout.vue'
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {path: '/', redirect: '/app/dashboard'},
     {

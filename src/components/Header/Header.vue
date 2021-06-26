@@ -83,7 +83,7 @@ export default {
     }
   },
   computed: {
-    ...mapState('layout', [
+    ...mapState('sidebar', [
       'sidebarClose',
       'sidebarStatic',
       'navbarType',
